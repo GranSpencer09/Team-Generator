@@ -2,7 +2,7 @@ const Employee = require("../lib/Employee");
 
 const employee1 = new Employee("Spencer", 9, "spencer@spencer.com");
 
-test("Can we load a new employee", () => {
+test("Can we load a new employee object", () => {
   expect(typeof employee1).toBe("object");
 });
 test("Does the right name load", () => {

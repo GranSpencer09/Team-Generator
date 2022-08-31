@@ -5,7 +5,7 @@ const manager1 = new Manager("Spencer", 9, "spencer@spencer.com", 7);
 test("Can we load a new Manager", () => {
   expect(typeof manager1).toBe("object");
 });
-test("Does the right role school", () => {
+test("Does the right office number load", () => {
   expect(manager1.officeNumber).toBe(7);
 });
 test("Does the right role load", () => {
