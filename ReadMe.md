@@ -1,5 +1,8 @@
 # Team-Generator
 
+- Link to Github Repo: [Team-Generator](https://github.com/GranSpencer09/Team-Generator)
+- Link to screen recording walkthrough: [Watch here](https://app.castify.com/view/5bad7c8f-1b21-4b57-b1a5-966f1323ceaa)
+
 ## Description
 
 This project helps all growing teams create a dynamic and easy to understand organzation chart. All of your team members in one place is a manager's dream. Makes it easy to share with superiors your team with a few bullet points that includes the most relevant info for each team member. Teams change quickly, they can be large or small, and this tool takes all that variation into account so manager can stay informed. With so much work to do, managers still need to get to know their teams to properly manage them. Managers can fall short when it comes to connecting with their teams, and while this app doesn't create relationships, it helps managers track and get to know teams faster.
