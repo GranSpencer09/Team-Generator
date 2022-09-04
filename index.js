@@ -3,9 +3,9 @@ const fs = require("fs");
 const Engineer = require("./lib/Engineer");
 const Manager = require("./lib/Manager");
 const Intern = require("./lib/Intern");
-//const { template } = require("@babel/core");
+const renderHTML = require("./lib/renderHTML");
 
-let team = [];
+const team = [];
 
 function addEngineer() {
   inquirer
@@ -43,7 +43,6 @@ function addEngineer() {
       buildTeam();
     });
 }
-
 function addIntern() {
   inquirer
     .prompt([
@@ -96,13 +95,15 @@ function buildTeam() {
       } else if (choice.team === "Add intern") {
         addIntern();
       } else {
-        generateHTML();
+        movetoRender();
       }
     });
 }
 
-function generateHTML() {
-  fs.writeFile("index.html", display(team));
+function movetoRender() {
+  fs.writeFile("./dist/createdIndex.html", renderHTML(team), function () {
+    console.log("Making your team chart now!");
+  });
 }
 
 function addManager() {
